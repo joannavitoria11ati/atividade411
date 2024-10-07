@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,131 +5,105 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #e9f1f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     line-height: 1.6;
-    padding: 2rem; 
 }
 
 header {
-    background-color: #1e40af; 
-    height: 8rem; 
+    background-color: #312e81;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
-    border-radius: 0 0 15px 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 h1 {
-    color: #ffffff; 
-    font-size: 2.5rem; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 main {
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .primeira {
     display: flex;
     align-items: center;
-    max-width: 800px; 
-    margin: 2rem auto; 
-    background: #ffffff; 
-    border-radius: 10px; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
-    padding: 1.5rem; 
-    transition: transform 0.2s, box-shadow 0.2s; 
-}
-
-.primeira:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
 }
 
 .primeira p {
-    max-width: 70%; 
-    margin-right: 2rem; 
-    font-size: 1.1rem; 
-    color: #333; 
+    max-width: 70%;
+    margin-right: 2rem;
 }
 
 .primeira img {
-    width: 10rem; 
-    height: auto; 
-    border-radius: 6px; 
+    width: 10rem;
+    height: auto;
+    border-radius: 4px;
     transition: transform 0.3s;
 }
 
 .primeira img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .segunda {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #B2EBF2; 
-    height: 25rem; 
-    margin: 2rem 0; 
-    border-radius: 10px;
-    padding: 1rem; /
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
-    transition: transform 0.2s; 
-}
-
-.segunda:hover {
-    transform: translateY(-3px); 
+    background-color: #E0F7FA;
+    height: 25rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .segunda img {
-    width: 8rem; 
-    height: 8rem; 
-    margin: 0 1rem; 
-    border-radius: 6px; 
+    width: 8rem;
+    height: 8rem;
+    margin: 0 1rem;
+    border-radius: 4px;
     transition: transform 0.3s;
 }
 
 .segunda img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .segunda p {
-    max-width: 60%; 
-    margin: 0 1rem; 
-    font-size: 1.1rem; 
-    color: #333; 
+    max-width: 60%;
+    margin: 0 1rem;
 }
 
 .terceira {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem; 
+    margin-top: 2rem;
 }
 
 .terceira img {
-    width: 6rem; 
-    height: auto; 
-    margin: 0.5rem; 
-    border-radius: 6px; 
-    transition: transform 0.3s; 
+    width: 6rem;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 4px;
+    transition: transform 0.3s;
 }
 
 .terceira img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
-
 
 h1, p {
-    padding: 0.5rem; 
-}
-
-
-.primeira, .segunda, .terceira {
-    transition: box-shadow 0.3s; 
-}
-
-.primeira:hover, .segunda:hover, .terceira:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    padding: 0.5rem;
 }
