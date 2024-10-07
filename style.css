@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -5,66 +6,132 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fonte diferente de Times New Roman */
-    background-color: #f5f5f5; /* Cor de fundo da página */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    background-color: #e9f1f5; /* Cor de fundo suave */
+    line-height: 1.6; /* Aumenta a legibilidade */
+    padding: 2rem; /* Adiciona padding ao body */
 }
 
 header {
-    background-color: #4CAF50; /* Cor de fundo do header */
+    background-color: #1e40af; /* Cor do header */
     height: 8rem; /* Altura do header */
-    display: flex; /* Usando flexbox */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 0 0 15px 15px; /* Cantos arredondados na parte inferior */
 }
 
 h1 {
-    color: white; /* Cor do título */
+    color: #ffffff; /* Cor do texto */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra do texto */
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem; /* Espaçamento interno do main */
 }
 
 .primeira {
-    display: flex; /* Usando flexbox para alinhar parágrafo e imagem */
-    align-items: center; 
-    max-width: 800px; /* Largura máxima do parágrafo */
-    margin-bottom: 2rem; /* Espaço entre div.primeira e div.segunda */
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Largura máxima */
+    margin: 2rem auto; /* Centraliza a div */
+    background: #ffffff; /* Fundo branco */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra */
+    padding: 1.5rem; /* Espaçamento interno */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transições suaves */
+}
+
+.primeira:hover {
+    transform: translateY(-3px); /* Efeito de leve elevação ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
 }
 
 .primeira p {
-    max-width: 60%; /* Largura máxima do parágrafo para não ficar extenso */
-    margin-right: 1rem; /* Espaço entre o parágrafo e a imagem */
+    max-width: 70%; /* Largura máxima do parágrafo */
+    margin-right: 2rem; /* Espaço entre o parágrafo e a imagem */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
 }
 
 .primeira img {
-    width: 10rem; /* Tamanho da imagem na div.primeira */
+    width: 10rem; /* Largura da imagem */
+    height: auto; /* Manter proporção */
+    border-radius: 6px; /* Cantos arredondados */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.primeira img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 .segunda {
-    background-color: #e7f3fe; /* Cor de fundo da div.segunda */
-    height: 25rem; /* Altura da div.segunda */
-    display: flex; /* Usando flexbox para alinhar os elementos */
+    display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #B2EBF2; /* Cor de fundo */
+    height: 25rem; /* Altura da div.segunda */
+    margin: 2rem 0; /* Distância das divs */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 1rem; /* Espaçamento interno */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra */
+    transition: transform 0.2s; /* Transição suave */
+}
+
+.segunda:hover {
+    transform: translateY(-3px); /* Efeito de leve elevação ao passar o mouse */
 }
 
 .segunda img {
-    width: 8rem; /* Tamanho das imagens na div.segunda */
+    width: 8rem; /* Tamanho das imagens */
+    height: 8rem; /* Altura das imagens */
+    margin: 0 1rem; /* Espaço entre as imagens */
+    border-radius: 6px; /* Cantos arredondados */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.segunda img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 .segunda p {
-    max-width: 30%; /* Largura máxima do parágrafo na div.segunda */
-    margin: 0 1rem; /* Espaço entre a imagem e o parágrafo */
+    max-width: 60%; /* Largura máxima do parágrafo */
+    margin: 0 1rem; /* Margem em relação às imagens */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
 }
 
 .terceira {
     display: flex;
     flex-direction: column; /* Imagens em coluna */
-    align-items: center; /* Centraliza horizontalmente as imagens */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 2rem; /* Distância entre divs */
 }
 
 .terceira img {
-    width: 6rem; /* Tamanho das imagens na div.terceira */
-    margin-bottom: 1rem; /* Espaço entre as imagens da div.terceira */
+    width: 6rem; /* Tamanho das imagens */
+    height: auto; /* Manter proporção */
+    margin: 0.5rem; /* Espaço entre as imagens */
+    border-radius: 6px; /* Cantos arredondados */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.terceira img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilos adicionais para melhorar o layout */
+h1, p {
+    padding: 0.5rem; /* Espaçamento interno para h1 e p */
+}
+
+/* Animação de foco nos elementos */
+.primeira, .segunda, .terceira {
+    transition: box-shadow 0.3s; /* Suave animação de sombra */
+}
+
+.primeira:hover, .segunda:hover, .terceira:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
 }
