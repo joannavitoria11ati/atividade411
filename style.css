@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fonte diferente de Times New Roman */
+    background-color: #f5f5f5; /* Cor de fundo da página */
+}
+
+header {
+    background-color: #4CAF50; /* Cor de fundo do header */
+    height: 8rem; /* Altura do header */
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+h1 {
+    color: white; /* Cor do título */
+}
+
+main {
+    padding: 1rem;
+}
+
+.primeira {
+    display: flex; /* Usando flexbox para alinhar parágrafo e imagem */
+    align-items: center; 
+    max-width: 800px; /* Largura máxima do parágrafo */
+    margin-bottom: 2rem; /* Espaço entre div.primeira e div.segunda */
+}
+
+.primeira p {
+    max-width: 60%; /* Largura máxima do parágrafo para não ficar extenso */
+    margin-right: 1rem; /* Espaço entre o parágrafo e a imagem */
+}
+
+.primeira img {
+    width: 10rem; /* Tamanho da imagem na div.primeira */
+}
+
+.segunda {
+    background-color: #e7f3fe; /* Cor de fundo da div.segunda */
+    height: 25rem; /* Altura da div.segunda */
+    display: flex; /* Usando flexbox para alinhar os elementos */
+    align-items: center;
+    justify-content: center;
+}
+
+.segunda img {
+    width: 8rem; /* Tamanho das imagens na div.segunda */
+}
+
+.segunda p {
+    max-width: 30%; /* Largura máxima do parágrafo na div.segunda */
+    margin: 0 1rem; /* Espaço entre a imagem e o parágrafo */
+}
+
+.terceira {
+    display: flex;
+    flex-direction: column; /* Imagens em coluna */
+    align-items: center; /* Centraliza horizontalmente as imagens */
+}
+
+.terceira img {
+    width: 6rem; /* Tamanho das imagens na div.terceira */
+    margin-bottom: 1rem; /* Espaço entre as imagens da div.terceira */
+}
